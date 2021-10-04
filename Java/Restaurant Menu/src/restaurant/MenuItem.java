@@ -32,4 +32,28 @@ public class MenuItem {
     public void setNew(boolean aNew) {
         isNew = aNew;
     }
+
+    public double getPrice() {
+        return price;
+    }
+
+    public String getCategory() {
+        return category;
+    }
+
+    public String getDescription() {
+        return description;
+    }
+
+    public boolean getIsNew() {
+        return isNew;
+    }
+
+    public String isItemNew() {
+        if (this.isNew) {
+            return ("This item is new!");
+        } else {
+            return ("This item is not new!");
+        }
+    }
 }
